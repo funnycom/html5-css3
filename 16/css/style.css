@@ -1,0 +1,67 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#container {
+	width:100%;
+}
+header {
+	width:100%;			
+}
+header h1 {
+  font-size:3em;
+  text-align: center;
+}
+#menus {
+	width:100%;         
+}
+#menus > div {
+  position:relative;
+  height:400px;
+  border:1px solid black;
+   margin-bottom:15px;
+}
+#menu1, #menu2, #menu3, #menu4, #menu5 {
+  width:100%;
+}
+#menus h2 {
+  position:absolute;
+  padding:5px;
+  font-size:2em;
+  color:white;
+  text-shadow:3px 3px 5px black;
+  right:3%;
+  bottom:10px;
+}
+#menu1 {
+  background:url("../images/dish1.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu2 {
+  background:url("../images/dish2.jpg") no-repeat center;
+  background-size:cover;
+}
+ #menu3 {
+  background:url("../images/dish3.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu4 {
+  background:url("../images/dish4.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu5 {
+  background:url("../images/dish5.jpg") no-repeat center;
+  background-size:cover;
+}
+footer {
+  width:100%;
+  background:#373737;
+  height:200px;
+}
+footer p {
+  font-size:1.2em;
+  color:#eee;
+  text-align:center;
+   line-height:200px;
+}

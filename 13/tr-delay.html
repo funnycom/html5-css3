@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transition timing function</title>
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></scirpt>
+<![endif]-->
+<style>
+	#ex {
+		position: relative;
+		width: 500px;
+		height: 150px;
+		margin: 0 auto;
+		border: 1px solid #aaa;
+		border-radius: 30px;
+		padding: 20px;
+	}
+	#ex:hover .box{		
+		-webkit-transform:rotate(720deg);
+		transform:rotate(720deg);
+		margin-left:420px;
+	}
+	.box {
+		font-size:12px;
+		position:relative;
+		width:60px;
+		height:60px;
+		margin-bottom:10px;
+		background-color:#eee;
+	}
+		.box p {
+			text-align: center;
+			padding-top: 4px;
+		}
+	#no-delay {
+		-webkit-transition-duration: 3s;
+		-moz-transition-duration: 3s;
+		-o-transition-duration: 3s;
+		transition-duration: 3s;
+		border: 1px solid #ff6a00;
+	}
+	#delay {
+		-webkit-transition-duration: 3s;
+		-moz-transition-duration: 3s;
+		-o-transition-duration: 3s;
+		transition-duration: 3s;
+		-webkit-transition-delay: 1s;
+		-moz-transition-delay: 1s;
+		-o-transition-delay: 1s;
+		transition-delay: 1s;
+		border: 1px solid #006aff;
+	}
+	
+</style>
+</head>
+
+<body>
+<div id="ex">
+	<div id="no-delay" class="box"> <p>no-delay</p> </div>
+	<div id="delay" class="box"> <p>delay</p> </div>
+</div>
+</body>
+</html>

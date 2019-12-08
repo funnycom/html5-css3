@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	.box {
+		width: 60px;
+		height: 60px;
+		margin: 60px;
+		-webkit-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+		-moz-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+		-o-animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+		animation: rotate 1.5s infinite, background 1.5s infinite alternate;
+	}
+
+	@-webkit-keyframes rotate {
+		from {
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		}
+
+		50% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+		}
+
+		to {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+		}
+	}
+
+	@-moz-keyframes rotate {
+		from {
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		}
+
+		50% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+		}
+
+		to {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+		}
+	}
+
+	@-o-keyframes rotate {
+		from {
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		}
+
+		50% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+		}
+
+		to {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+		}
+	}
+	
+	@keyframes rotate {
+		from {
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		}
+		50% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+		}
+		to {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+		}
+	}
+
+	@-webkit-keyframes background {
+		from {
+			background: red;
+		}
+
+		50% {
+			background-color: green;
+		}
+
+		to {
+			background-color: blue;
+		}
+	}
+
+	@-moz-keyframes background {
+		from {
+			background: red;
+		}
+
+		50% {
+			background-color: green;
+		}
+
+		to {
+			background-color: blue;
+		}
+	}
+
+	@-o-keyframes background {
+		from {
+			background: red;
+		}
+
+		50% {
+			background-color: green;
+		}
+
+		to {
+			background-color: blue;
+		}
+	}
+	@keyframes background {
+		from {
+			background: red;
+		}
+
+		50% {
+			background-color: green
+		}
+
+		to {
+			background-color: blue;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div class="box">	</div>
+</body>
+</html>

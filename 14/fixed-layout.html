@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fluid Grid Layout</title>
+<style>
+	#wrapper {
+		width:960px;
+		margin:0 auto;
+	}
+	header {  /* 헤더 */
+		width:960px;
+		height:120px;
+		background-color:#066cfa;
+		border-bottom:1px solid black;
+	}
+	.header-text{
+		font-size:40px;
+		color:white;
+		text-align:center;
+		line-height:120px;
+	}
+	.content {   /* 본문 */
+		float:left;
+		width:600px;
+		height:400px;	
+		padding:15px;
+		background-color:#ffd800;
+	}
+	.right-side {  /* 사이드 바 */
+		float:right;
+		width:300px;
+		height:400px;
+		padding:15px;
+		background-color:#00ff90;
+	}
+	footer {  /* 푸터 */
+		clear:both;
+		height:120px;
+		background-color:#c3590a;
+	}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<h1 class="header-text">고정 그리드 레이아웃</h1>
+		</header>
+		<section class="content">
+			<h4>본문</h4>
+		</section>
+		<aside class="right-side">
+			<h4>사이드바</h4>
+		</aside>
+		<footer>
+			<h4>푸터</h4>
+		</footer>
+	</div>
+</body>
+</html>

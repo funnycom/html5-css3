@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+        .wrapper {
+            width: 500px;
+            height: 150px;
+            margin: 0 auto 20px;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+        #container1 {
+            -ms-align-content: flex-start;
+            -webkit-align-content: flex-start;
+            align-content: flex-start;
+        }
+        #container2 {
+            -ms-align-content: flex-end;
+            -webkit-align-content: flex-end;
+            align-content: flex-end;
+        }
+        #container3 {
+            -ms-align-content: center;
+            -webkit-align-content: center;
+            align-content: center;
+        }
+        #container4 {
+            -ms-align-content: space-between;
+            -webkit-align-content: space-between;
+            align-content: space-between;
+        }
+        #container5 {
+            -ms-align-content: space-around;
+            -webkit-align-content: space-around;
+            align-content: space-around;
+        }						
+		.wrapper div {
+			width:200px;
+			border: 2px solid black;
+			background:#ccc;
+		}
+		h1 {
+			text-align:center;
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-content : flex-start (기본값)</h1>
+	<div id="container1" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-content : flex-end</h1>
+	<div id="container2" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-content : center</h1>
+	<div id="container3" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-content : space-between</h1>
+	<div id="container4" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-content : space-around</h1>
+	<div id="container5" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+</body>
+</html>

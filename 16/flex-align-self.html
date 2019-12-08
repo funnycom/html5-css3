@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+		#container {
+			width: 500px;
+			height: 100px;
+			margin: 0 auto 20px;
+			display: flex;
+			align-items:center;
+			border: 2px solid black;
+		}			
+		#container div {
+			width:100px;
+			border: 2px solid black;
+			background:#ccc;
+		}
+		#box1 {
+			align-self:flex-start;
+		}
+		h1 {
+			text-align:center;
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1"><p>1</p></div>
+		<div id="box2"><p>2</p></div>
+		<div id="box3"><p>3</p></div>
+	</div>
+
+</body>
+</html>

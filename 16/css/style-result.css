@@ -1,0 +1,95 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+#container {
+	width:100%;
+}
+header {
+	width:100%;			
+}
+header h1 {
+  font-size:3em;
+  text-align: center;
+}
+#menus {
+	width:100%;         
+}
+#menus > div {
+  position:relative;
+  height:400px;
+  border:1px solid black;
+   margin-bottom:15px;
+}
+#menu1, #menu2, #menu3, #menu4, #menu5 {
+  width:100%;
+}
+#menus h2 {
+  position:absolute;
+  padding:5px;
+  font-size:2em;
+  color:white;
+  text-shadow:3px 3px 5px black;
+  right:3%;
+  bottom:10px;
+}
+#menu1 {
+  background:url("../images/dish1.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu2 {
+  background:url("../images/dish2.jpg") no-repeat center;
+  background-size:cover;
+}
+ #menu3 {
+  background:url("../images/dish3.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu4 {
+  background:url("../images/dish4.jpg") no-repeat center;
+  background-size:cover;
+}
+#menu5 {
+  background:url("../images/dish5.jpg") no-repeat center;
+  background-size:cover;
+}
+footer {
+  width:100%;
+  background:#373737;
+  height:200px;
+}
+footer p {
+  font-size:1.2em;
+  color:#eee;
+  text-align:center;
+   line-height:200px;
+}
+
+@media all and (min-width:768px) {
+  #menus {
+    display: flex; /* 플렉서블 박스 레이아웃 적용 */
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; /* 여러 줄에 걸쳐 표시 */
+    justify-content: space-between; /* 화면 양쪽에 바짝 붙이기  */
+  }
+  #menu1, #menu2, #menu3, #menu4 {
+    width: 49%;
+  }
+  #menu5 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width:992px) {
+  #menu1, #menu2, #menu3, #menu4, #menu5 {
+    width:33%;
+  }
+  #menu5 {
+    margin-left: 0.5%;
+    -ms-flex: 2 2 0;
+    -webkit-flex: 2 2 0;
+    flex: 2 2 0;
+  }
+}

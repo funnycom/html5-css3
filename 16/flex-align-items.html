@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+		.wrapper {
+			width: 500px;
+			height: 100px;
+			margin: 0 auto 20px;
+			display: flex;
+			border: 2px solid black;
+		}
+		#container1 {
+			align-items: stretch;
+		}	
+		#container2 {
+			align-items:flex-start;
+		}
+		#container3 {
+			align-items: flex-end;
+		}
+		#container4 {
+			align-items: center;
+		}
+		#container5 {
+			align-items: baseline;
+		}					
+		.wrapper div {
+			width:100px;
+			border: 2px solid black;
+			background:#ccc;
+		}
+		h1 {
+			text-align:center;
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-items : stretch(기본값)</h1>
+	<div id="container1" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : flex-start</h1>
+	<div id="container2" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : flex-end</h1>
+	<div id="container3" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : center</h1>
+	<div id="container4" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : baseline</h1>
+	<div id="container5" class="wrapper">
+		<div><p style="font-size:14px">1</p></div>
+		<div><p style="font-size:20px">2</p></div>
+		<div><p style="font-size:16px">3</p></div>
+	</div>
+</body>
+</html>

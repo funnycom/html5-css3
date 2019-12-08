@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			.origin {
+				width: 210px;
+				height: 200px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+            .rotate1:hover {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+            }
+            .rotate2:hover {
+                -webkit-transform: rotate(-40deg);
+                -ms-transform: rotate(-40deg);
+                -moz-transform: rotate(-40deg);
+                -o-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+            }
+		</style>
+	</head>
+	<body>		
+		<div class="origin">
+			<div class="rotate1">
+				<img src="images/fruit.jpg">
+			</div>
+		</div>
+		<div class="origin">
+			<div class="rotate2">
+				<img src="images/fruit.jpg">
+			</div>
+		</div>
+	</body>
+</html>

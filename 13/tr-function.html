@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transition timing function</title>
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></scirpt>
+<![endif]-->
+<style>
+#ex div{
+	float:left;
+	width:100px;
+	height:50px;
+	margin:5px 10px;
+	padding:5px;
+	color:white;
+	background-color:#006aff;
+	border-radius:5px;
+	text-align:center;
+	font-weight:bold;	
+}
+#ex:hover div{
+	height:400px;
+}
+    #ex .ease {
+        -moz-transition: 3s ease;
+        -o-transition: 3s ease;
+        -webkit-transition: 3s ease;
+        transition: 3s ease;
+    }
+#ex .linear{
+	-webkit-transition:3s linear;
+	-moz-transition:3s linear;
+	-o-transition:3s linear;
+    transition:3s linear;
+}
+#ex .ease-in{
+	-webkit-transition:3s ease-in;
+	-moz-transition:3s ease-in;
+	-o-transition:3s ease-in;
+    transition:3s ease-in;
+}
+#ex .ease-out{
+	-webkit-transition:3s ease-out;
+	-moz-transition:3s ease-out;
+	-o-transition:3s ease-out;
+    transition:3s ease-out;
+}
+#ex .ease-in-out{
+	-webkit-transition:3s ease-in-out;
+	-moz-transition:3s ease-in-out;
+	-o-transition:3s ease-in-out;	
+    transition:3s ease-in-out;
+}
+</style>
+</head>
+
+<body>
+<div id="ex">
+	<div class="ease"> ease </div>
+	<div class="linear"> linear </div>
+	<div class="ease-in"> ease-in </div>
+	<div class="ease-out"> ease-out </div>
+	<div class="ease-in-out"> ease-in-out </div>
+</div>
+</body>
+</html>

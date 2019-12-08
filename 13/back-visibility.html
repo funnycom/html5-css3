@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			h1 {font-size:60px;}
+			div {
+				width:200px;
+				height:200px;
+			}
+			.container{
+				border:1px solid black;				
+				perspective:300px;
+				margin-top:100px;
+				margin-left:100px;
+				float:left;
+			}
+            .box {
+                background: #82cbd8;
+                -webkit-transform: rotateY(135deg);
+                -moz-transform: rotate(135deg);
+                -ms-transform: rotateY(135deg);
+                -o-transform: rotateY(135deg);
+                transform: rotateY(135deg);
+            }
+			#back1 {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+			#back2 {
+				-webkit-backface-visibility: visible;
+				-moz-backface-visibility: visible;
+				backface-visibility: visible;
+			}
+		</style>
+	</head>
+	<body>		
+		<div class="container">
+			<div class="box" id="back1">
+				<h1>BACK</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="box" id="back2">
+				<h1>BACK</h1>
+			</div>
+		</div>
+	</body>
+</html>

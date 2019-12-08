@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	h1 {
+		text-align:center;
+		font-size:52px;
+	}
+	.tr1 {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border: 1px solid black;
+		-webkit-transition-property: background-color, transform, width, height;
+		-moz-transition-property: background-color, transform, width, height;
+		-o-transition-property: background-color, transform, width, height;
+		transition-property: background-color, transform, width, height;
+		-webkit-transition-duration: 2s, 3s;
+		-moz-transition-duration: 2s, 3s;
+		-o-transition-duration: 2s, 3s;
+		transition-duration: 2s, 3s;
+	  }
+	.tr1:hover {
+		width: 200px;
+		height: 200px;
+		background-color: #ff6e5f;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);			
+	}
+</style>
+</head>
+
+<body>
+	<div class="tr1"><h1>!</h1> </div>
+</body>
+</html>
