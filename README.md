@@ -14,7 +14,7 @@
 1. 화면 오른쪽 위에 있는 [Fork] 버튼을 클릭합니다.
 2. 자신의 리포지토리에 복제된 소스를 사용하면 됩니다.
 
-![](https://github.com/kyrieko/webd/raw/master/img/git-fork.png)
+![](images/fork.png)
 
 ----------------------------------------------
 
@@ -24,6 +24,6 @@
 3. 다운로드한 파일의 이름은 html5-css3-master.zip입니다. 적절한 이름으로 바꿔도 됩니다.
 4. 다운로드한 파일의 압축을 풉니다. 
 
-![](https://github.com/kyrieko/webd/raw/master/img/git-download.png)
+![](imges/download.png)
 
 ----------------------------------------------
