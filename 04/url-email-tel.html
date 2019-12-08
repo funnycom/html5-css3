@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="ko">
+  <head>
+		<meta charset="utf-8">
+		<title> 웹 폼</title>
+    <style>
+		 ul {
+			 list-style:none;
+		 }
+		 li {
+			 margin:10px;
+		 }
+		 li label {
+			 width:120px;
+			float:left;
+			text-align:right;
+			padding-right:8px;
+		 }
+		 input[type="submit"] {
+			 text-align:center;
+			 width:100%;
+			 height:30px;
+			 margin-top:15px;
+		 }
+	 </style>
+  </head>
+  <body>
+		<h1>회원 가입</h1>
+		<form>
+			<fieldset>
+				<legend>로그인 정보</legend>
+				<ul>
+					<li>
+    				<label for="user-id">아이디 </label>
+						 <input type="text" id="user-id">
+					</li>
+					<li>
+						<label for="pwd1">비밀번호 </label>
+						<input type="password" id="pwd1">
+					</li>
+					<li>
+						<label for="pwd2">비밀번호 확인 </label>
+						<input type="password" id="pwd2">				
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>개인 정보</legend>
+				<ul>
+					<li>
+						<label for="user-name">이름 </label>
+						<input type="text" id="user-name">
+					</li>
+					<li>
+						<label for="mail">메일 주소</label>
+						<input type="email" id="mail">
+					</li>
+					<li>
+						<label for="phone">연락처</label>
+						<input type="tel" id="phone">
+					</li>
+					<li>
+						<label for="homep">블로그/홈페이지</label>
+						<input type="url" id="homep">
+					</li>
+				</ul>
+			</fieldset>
+			<input type="submit" value="가입하기">
+		</form>
+  </body>
+</html>

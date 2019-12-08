@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+		 <meta charset="utf-8">
+     <title> 웹 폼</title>
+     <style>
+	 body {
+		background-color:#fff; 
+	 }
+ 	 ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	 }		 
+	 </style>
+  </head>
+  <body>
+  	<ul>
+      <li>
+      	<label>10초 남음</label>
+		<!-- 전체 60초 중 50초 진행 -->
+		<progress value="50" max="60"> </progress>
+      </li>
+      <li>
+      	<label>진행률 30%</label>
+		<!-- 전체 100 중 30만큼 진행 -->
+    	<progress value="30" max="100"></progress> 
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>텍스트 링크 </title>
+  <style>
+    ul {
+      list-style-type:none;  /* 불릿 없앰 */
+    }
+    li {
+      display:inline;  /* 인라인레벨 요소로 만듦 - 가로로 배치 */
+      float:left; /* 왼쪽으로 붙여서 배치 */
+      margin:10px 15px; /* 항목 간의 마진 */
+      padding:10px; /* 항목 내의 패딩 */
+    }
+
+    a:link { /* 링크의 스타일 */
+      text-decoration:none;  /* 밑줄 없앰 */
+      color:black;  /* 글자색 */
+    }
+    a:visited { /* 방문했던 링크의 스타일 */
+      color:black;  /* 글자색 */
+    }
+    a:hover{  /* 마우스 오버했을 때 링크의 스타일 */
+      background-color:yellow;  /* 배경색 */
+    }
+    a:active{  /* 활성화된 링크의 스타일 */
+      background-color:black;  /* 배경색 */
+      color:white;  /* 글자색 */
+    }
+  </style>
+</head>
+<body>
+  <h1>이지스퍼블리싱</h1>
+  <ul>
+    <li><a href="#">회사소개</a></li>
+    <li><a href="#">도서</a></li>
+    <li><a href="#">자료실</a></li>
+    <li><a href="#">질문답변</a></li>
+    <li><a href="#">동영상강의</a></li>
+  </ul>
+</body>
+</html>

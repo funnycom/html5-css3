@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+     <title> 웹 폼</title>
+     <style>
+				body {
+					background-color:#fff; 
+				}
+				form fieldset{
+					margin-bottom:25px; 
+				}
+				form legend{
+					font-size:15px;
+					font-weight:600; 
+				}
+				form label.reg {
+					font-size:14px;
+					width:110px;
+					color:#390;
+					font-weight:bold;		
+					float:left;
+					text-align:right;
+					margin-right:10px;
+				}
+				form ul li{
+					list-style:none; 
+					margin: 15px 0;	
+					font-size:14px;	
+				} 
+
+				#member, #stuffs {
+					width:50px; 
+				}
+	 		</style>
+  </head>
+  <body>
+    <h1> 여름방학 특강 신청</h1>
+  	<form>
+  		<fieldset id="subject">
+  			<legend>수강과목</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="subj">영어회화(초급)</label>
+  					<input type="text" id="subj" value="오전 9:00~11:00" readonly>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset id="register">
+  			<legend> 신청자</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="uname">이름</label>
+  					<input type="text" id="uname" autofocus required>
+  				</li>
+  				<li>
+  					<label class="reg" for="uid">학번</label>
+  					<input type="text" id="uid" placeholder="하이픈없이 입력" maxlength="8" required>
+  				</li>
+  				<li>
+  					<label class="reg" for="uclass">학과</label>
+  					<select id="uclass">
+  						<option value="archi">건축공학과</option>
+  						<option value="mechanic">기계공학과</option>
+  						<option value="indust">산업공학과</option>
+  						<option value="elec">전기전자공학과</option>
+  						<option value="computer" selected>컴퓨터공학과</option>
+  						<option value="chemical">화학공학과</option>
+  					</select>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset>
+  			<legend>교재 주문</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="book">교재</label>
+  					<input type="number" id="book" value="1" min="1" max="3">
+  				</li>
+  				<li>
+  					<label class="reg" for="wsheet">워크시트</label>
+  					<input type="number" id="wsheet" value="1" min="1" max="3">
+  				</li>
+  				<li>
+  					<label class="reg" for="group">단체주문</label>
+  					<input type="number" id="group" value="10" min="10" max="100" step="10">
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset>
+  			<button type="submit" value="submit">신청하기</button>
+  			<button type="reset" value="reset">다시쓰기</button>
+  		</fieldset>
+
+
+  	</form>
+  </body>
+</html>

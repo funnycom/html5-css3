@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+     <meta charset="utf-8">
+		 <title> 웹 폼</title>
+     <style>
+	 body {
+		background-color:#fff; 
+	 }
+ 	 ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	 }
+	 </style>
+  </head>
+  <body>
+    <script>
+	function dwn(){
+		var bar=document.getElementById("bar"),
+		progress=document.getElementById("progress"),
+		loaded=0;
+		var load=function(){
+			loaded +=5;
+			bar.value=loaded;		
+
+			if(loaded ==100){
+				clearInterval(dummyLoad);	
+			}		
+		};
+	
+		var dummyLoad = setInterval(function() {
+			load()	
+		}, 500);
+	}
+	</script>    
+	<input type="button" value="다운로드 시작" onClick="dwn()">    
+    <progress id="bar" value="0" max="100">
+    	<span id="progress"> </span></progress>    
+  </body>
+</html>

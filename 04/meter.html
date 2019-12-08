@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+     <meta charset="utf-8">
+		 <title> 웹 폼</title>
+     <style>
+	 body {
+		background-color:#fff; 
+	 }
+ 	 ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	 }
+     </style>
+  </head>
+  <body>
+  	<ul>
+      <li>
+      	<label>점유율 0.8 </label>
+	  	<!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다 -->
+		<meter value="0.8"></meter>
+      </li>
+      <li>
+      	<label>사용량 64%</label>
+		<!-- 전체 100 중에서 64만큼 차지합니다  -->
+		<meter min="0" max="100" value="64"></meter>
+      </li>
+      <li>
+      	<label>트래픽 초과</label>
+		<!-- 전체 크기는 1024~10240까지인데 높다고 설정한 8192보다 현재 값 9216이 더 큽니다 -->
+      	<meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>        
+      </li>
+      <li>
+      	<label>적절한 트래픽</label>
+		<!-- 전체 1 중에서 현재 0.5를 차지하고 있으며 적정도를 0.8로 설정했습니다 -->
+        <meter value="0.5" optimum="0.8"></meter>
+      </li>
+    </ul>
+  </body>
+</html>

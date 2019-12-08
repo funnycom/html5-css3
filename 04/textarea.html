@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> 웹 폼</title>
+	<style>
+		form fieldset {
+			margin: 10px 0;
+		}
+
+		form legend {
+			font-size: 18px;
+			color: #0066FF;
+			font-weight: 600;
+		}
+
+		form label.reg {
+			font-size: 14px;
+			width: 120px;
+			float: left;
+		}
+
+		form label em {
+			font-size: 15px;
+			color: red;
+			font-weight: 800;
+		}
+
+		form ul li {
+			list-style: none;
+			margin: 10px 0;
+		}
+
+		form .easys {
+			text-align: left;
+			font-size: 12px;
+			color: blue;
+		}
+
+		form fieldset.sendform {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset class="login">
+			<legend>로그인</legend>
+			<label for="user_id">아이디 </label>
+			<input type="text" id="user_id" size="10" autofocus>
+			<label for="user_pw">비밀번호 </label>
+			<input type="password" id="user_pw" size="10">
+			<input type="submit" value="로그인">
+		</fieldset>
+		<fieldset class="register">
+			<legend>가입하기</legend>
+			<ul>
+				<li>
+					<label class="reg" for="user_name">아이디 <em>*</em></label>
+					<input type="text" id="new_id" size="20" autocomplete="on" required>
+				</li>
+				<li>
+					<label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+					<input type="password" id="new_pw1" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+					<input type="password" id="new_pw2" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_name">이름 <em>*</em></label>
+					<input type="text" id="user_name" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+					<input type="email" id="user_mail" size="20" required>
+				</li>
+				<li>
+					<label class="reg" for="user_tel">전화번호 </label>
+					<input type="tel" id="user_tel" size="20">
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="easys">
+			<legend>이지스퍼블리싱</legend>
+			<textarea name="intro" cols="60" rows="5">
+열심히 사는 사람들의 손을 잡아주는 곳 - 이지스 퍼블리싱
+
+우리는 책을 내기 전에 다시 한번 물어봅니다
+"이 책이 사람들에게 도움이 되는가?"
+
+더 쉽게, 더 빠르게 지식을 전달하고 싶습니다.
+이지스퍼블리싱의 책과 앱을 만나보세요.
+			</textarea>
+		</fieldset>
+		<fieldset class="sendform">
+			<input type="submit" value="가입하기">
+			<input type="reset" value="다시쓰기">
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>웹 폰트 사용하기</title>
+    <style>
+      @font-face {
+        font-family: 'trana'; /* 글꼴 */
+        src: local('trana'),
+            url('trana.eot'),
+            url('trana.woff') format('woff'),
+            url('trana.ttf') format('truetype');
+       }
+      .w-font {
+        font-family:'trana', sans-serif; /* 웹 폰트 지정 */
+      }
+      p {
+        font-size:30px; /* 글자 크기 */
+      }
+    </style>
+</head>
+<body>
+  <p>Using Default Fonts</p>
+  <p class="w-font">Using Trana Fonts</p>
+</body>
+</html>
