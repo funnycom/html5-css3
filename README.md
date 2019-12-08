@@ -21,7 +21,8 @@
 ### 깃허브 계정이 없거나 한꺼번에 다운로드하려면
 1. 파일 목록 오른쪽 위에 있는 [Colone or download]를 클릭합니다.
 2. [Download ZIP]을 클릭합니다.
-3. 다운로드한 파일의 압축을 풉니다.
+3. 다운로드한 파일의 이름은 html5-css3-master.zip입니다. 적절한 이름으로 바꿔도 됩니다.
+4. 다운로드한 파일의 압축을 풉니다. 
 
 ![](https://github.com/kyrieko/webd/raw/master/img/git-download.png)
 
