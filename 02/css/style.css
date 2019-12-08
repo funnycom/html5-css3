@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background:#222;
+    height:100%;
+    margin:0;
+}
+li,p {
+    line-height: 2.0;
+    font-size:0.9em;
+}
+#container {
+    position:absolute;
+    left:50%;
+    margin-left:-450px;
+    width:900px;
+    height:100%;
+    background:#fff;
+}
+aside {
+    float:left;
+    width:300px;    
+    padding:20px 50px;
+    height:100%;
+    background:rgb(216, 216, 216);
+}
+.pf {
+    border-radius:10%;
+    box-shadow:3px 3px 10px 2px #222;
+
+} 
+#detail {
+    position: relative;
+    top:80px;
+}
+#sns
+ {
+    position:relative;
+    top:100px;
+ }
+
+#main {
+    float:right;
+    width:600px;
+    height:100%;
+    padding:20px;
+}
+
+#main > section {
+    width:500px;
+    padding:20px;
+    margin:10px;
+    border-bottom:1px dotted #222;
+}
+
+section > p, section>table {
+    margin-left:50px;
+}
+
+/* 글자스타일 */
+aside h1 {
+    font-size:1.8em;
+    font-variant: small-caps;
+}
+aside h2 {
+    font-size:1.2em;
+}
+#namecard p {
+    font-size:0.9em;
+    color:rgb(99, 99, 99);
+    /* font-style:italic; */
+}
+
+.subtitle {
+    font-size:1.5em;
+    /* padding-left:45px; */
+    line-height:0.9em;
+}
+.subtitle::before {
+    content:"";
+    display:block;
+    background:url("../images/note.png") no-repeat;
+    width:24px;
+    height:24px;
+    float:left;
+    margin:0 15px 0 0;
+}
+section > p {
+    font-size:0.9em;
+}
+
+.label {
+    display:inline-block;
+    width:80px;
+    color:purple;
+    font-weight:bold;
+}
+
+meter {
+    width:200px;
+    margin-right:10px;    
+}

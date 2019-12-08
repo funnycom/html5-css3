@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>표 만들기</title>
+	<style>
+		th {
+			padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+		}
+	</style>
+</head>
+<body>
+	<table border="1">
+		<colgroup>
+			<col style="width:120px;">
+			<col style="width:300px;">
+			<col style="width:120px;">
+			<col style="width:300px;">
+		</colgroup>
+		<tr>
+			<th>이름</th>
+			<td></td>
+			<th>연락처</th>
+			<td></td>
+		</tr>
+		<tr>
+			<th>주소</th>
+			<td colspan="3"></td>
+		</tr>		
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3"></td>
+		</tr>
+	</table>
+</body>
+</html>

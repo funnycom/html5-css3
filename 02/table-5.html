@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>표 만들기</title>
+	<style>
+		td, th {
+			padding:10px;  /* 셀 테두리와 내용 사이의 간격(패딩) */
+		}
+	</style>
+</head>
+<body>	
+	<p id="summary">다음 표는 HTMl5를 지원하는 모던(Modern Browser)를 정리한 것입니다. 최신 버전일수록 HTML5를 좀더 많이 지원하기 때문에 최신 버전을 다운로드하는 것이 좋습니다. </p>
+	<table border="1" aria-describedby="summary">
+		<caption>Modern Browser</caption>
+		<tr>
+			<th>브라우저</th>
+			<th>제조업체</th>
+			<th>다운로드</th>
+		</tr>
+		<tr>
+			<th>크롬(Chrome)</th>
+			<td>Google</td>
+			<td>https://www.google.com/chrome/ </td>
+		</tr>
+		<tr>
+			<th>파이어폭스(Firfox)</th>
+			<td>Mozilla</td>
+			<td>https://www.mozilla.org/ko/firefox/</td>
+		</tr>
+		<tr>
+			<th> 엣지(Edge) </th>
+			<td> Microsoft </td>
+			<td>https://www.microsoft.com/ko-kr/windows/microsoft-edge</td>
+		</tr>
+	</table>
+</body>
+</html>
