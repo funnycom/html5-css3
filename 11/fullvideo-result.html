@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>동영상 배경</title>	
+		<style>
+			#container {
+				position:relative;
+        text-align:center;				
+				margin-top:30%;
+        margin-left:30%;
+			}
+      h2 {
+        font-size:2em;
+      }
+			h1{
+				font-size:3.5em;
+			}
+      a:link, a:visited { 
+        text-decoration:none;
+        color:#222;
+      }
+      a:hover {
+        cursor:pointer;
+      }
+			#bg {
+				position:fixed;
+				left:0;
+				top:0;
+				width:auto;
+				height:auto;
+				min-width:100%;
+				min-height:100%;
+				z-index:-100;
+				background:url(images/flame.jpg) left top no-repeat;
+				background-size: cover;
+			}
+		</style>
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		<![endif]-->		
+	</head>
+	<body>
+		<video src="media/flame.mp4" autoplay loop muted poster="images/flame.jpg" id="bg"></video>
+		<div id="container">
+      <h2>사람을 구체적으로 도와주는 책</h2>
+      <h1><a href="http://www.easyspub.co.kr">이지스퍼블리싱</a></h1>				
+		</div>		
+	</body>
+</html>
