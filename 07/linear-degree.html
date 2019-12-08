@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>선형 그러데이션</title>
+  <style>
+		div {
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+  	.grad { /* 45도 (오른쪽 위) 방향으로, 빨강에서 흰색으로 */
+  		background: #ff0000; /* CSS3 미지원 브라우저*/
+  		background: -webkit-linear-gradient(45deg, #ff0000, #ffffff); /* 초기 모던 브라우저 */
+  		background: -moz-linear-gradient(45deg, #ff0000, #ffffff); /* 초기 모던 브라우저 */
+  		background: -o-linear-gradient(45deg, #ff0000, #ffffff); /* 초기 모던 브라우저 */
+  		background: linear-gradient(45deg, #ff0000, #ffffff); /* 최신 모던 브라우저 */
+  	}
+  </style>
+</head>
+<body>
+  <div class="grad"></div>
+ </body>
+</html>

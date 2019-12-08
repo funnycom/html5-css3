@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    div {
+      width:400px;
+      height:200px;
+      padding: 35px;
+      border: 15px  solid #ccc;        
+			margin-bottom:20px;
+    }
+    .bg1 { 
+      background:url('images/bg3.jpg') no-repeat;    
+      background-origin:padding-box;
+    }
+    .bg2 { 
+      background:url('images/bg3.jpg') no-repeat;     
+      background-origin:border-box;
+    }
+    .bg3 { 
+      background:url('images/bg3.jpg') no-repeat;    
+      background-origin:content-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+ </body>
+</html>

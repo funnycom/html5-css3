@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>box-sizing</title>
+	<style>
+		.box1 {
+			box-sizing:content-box; /* 콘텐츠 영역 기준 */
+			width: 300px; /* 콘텐츠 영역 너비 300px */
+			height: 150px; /* 높이 */
+			margin: 10px; /* 마진 */
+			padding: 30px; /* 패딩 */
+			border:2px solid red; /* 테두리 */
+		}
+		.box2 {
+			box-sizing:border-box;  /* 테두리까지(박스 전체) 기준*/
+			width: 300px; /* 박스 모델 전체 너비 */
+			height: 150px; /* 박스 높이 */
+			margin: 10px; /* 마진 */
+			padding: 30px; /* 패딩 */
+			border: 2px solid red; /* 테두리 */
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"> box-sizing = "content-box" </div>
+	<div class="box2"> box-sizing = "border-box"</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<title>CSS 레이아웃 - 2단 레이아웃</title>
+		<meta charset="utf-8">
+		<style>
+			div {
+				padding:20px;
+				border:1px solid #ccc;
+			}
+			#container {
+				width:960px;
+				margin:0 auto;
+			}
+			#header {
+				padding:20px;
+				margin-bottom:20px;
+			}
+			#contents {
+				width: 490px;
+				float: left;
+				margin-bottom: 20px;
+			}
+			#left-sidebar {
+				width: 150px;
+				float: left;
+				margin-bottom: 20px;
+				margin-right: 20px;
+			}
+			#right-sidebar {
+				width: 150px;
+				float: right;
+				margin-bottom: 20px;
+			}
+			#footer {
+				clear:both;			
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>사이트 제목</h1>
+			</div>
+			<div id="left-sidebar">
+				<h2>사이드바</h2>
+				<ul>
+					<li>항목1</li>
+					<li>항목2</li>
+					<li>항목3</li>
+					<li>항목4</li>
+				</ul>
+			</div>
+			<div id="contents">
+				<h2>본문</h2>
+				<p>예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다. 이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+
+				<p>국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.</p>
+
+				<p>모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 대한민국의 국민이 되는 요건은 법률로 정한다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여 재판한다.</p>
+			</div>
+			<div id="right-sidebar">
+				<h2>사이드바</h2>
+				<ul>
+					<li>항목1</li>
+					<li>항목2</li>
+					<li>항목3</li>
+					<li>항목4</li>
+				</ul>
+			</div>
+			<div id="footer">
+				<h2>푸터</h2>
+				<p> 저작권 정보 </p>
+				<p> 연락처 등 </p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>원형 그러데이션</title>
+  <style>
+    li {
+		float:left;
+		display:inline;
+	    width:300px;
+	    height:300px;
+	    border:1px solid black;
+	    margin:10px;
+    }	
+    #div1{
+		background:darkgreen;
+		background:-webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+		background:-moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+		background:-o-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+		background:radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+    }
+    #div2{
+		background:darkgreen;
+	  background:-webkit-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+		background:-moz-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+		background:-o-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+		background:radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+    }
+    #div3{
+		background:darkgreen;
+	    background:-webkit-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+		background:-moz-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+		background:-o-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+		background:radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+    }
+    #div4{
+		background:darkgreen;
+	    background:-webkit-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+		background:-moz-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+		background:-o-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+		background:radial-gradient(circle v-corner at 30% 40%, white, yellow, green);
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li id="div1"></li>
+    <li id="div2"></li>
+    <li id="div3"></li>
+    <li id="div4"></li>
+  </ul>
+ </body>
+</html>

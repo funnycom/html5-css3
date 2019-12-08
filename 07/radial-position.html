@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>원형 그러데이션</title>
+  <style>
+	div {
+		width:500px;
+		height:300px;
+		margin:10px;
+	}
+  	.grad {
+  		background: blue;
+  		background: -webkit-radial-gradient(10% 10%, circle, white,blue);
+  		background: -moz-radial-gradient(10% 10%, circle,white,blue);
+  		background: -o-radial-gradient(10% 10%, circle, white,blue);
+  		background: radial-gradient(circle at 10% 10%,white,blue);
+  	}
+  </style>
+</head>
+<body>
+  <div class="grad"></div>
+</body>
+</html>

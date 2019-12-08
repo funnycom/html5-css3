@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>선형 그러데이션</title>
+  <style>
+		div {
+			width:500px;
+			height:300px;
+		}
+  	.grad {
+  		background: #06f; /* css3 미지원 브라우저 */
+  		background-image: -webkit-linear-gradient(top, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background-image: -moz-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background: -o-linear-gradient(bottom, #06f, white 30%, #06f); /* 초기 모던 브라우저 */
+  		background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 최신 모던 브라우저 */
+  	}
+  </style>
+</head>
+<body>
+  <div class="grad"></div>
+ </body>
+</html>

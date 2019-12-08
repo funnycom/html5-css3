@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>선형 그러데이션 반복</title>
+  <style>
+		div {
+			width:500px;
+			height:300px;
+			border-radius:10px;
+      margin:10px;
+		}
+
+		.grad1 {
+			background: red; /* css3 미지원 브라우저 */
+			background: -webkit-repeating-linear-gradient(yellow, red 20px); /* 초기 모던 브라우저 */
+			background: -moz-repeating-linear-gradient(yellow, red 20px); /* 초기 모던 브라우저 */
+			background: -o-repeating-linear-gradient(yellow, red 20px); /* 초기 모던 브라우저 */
+			background: repeating-linear-gradient(yellow, red 20px); /* 최신 모던 브라우저 */
+		}
+
+  </style>
+</head>
+<body>
+  <div class="grad1"></div>
+ </body>
+</html>

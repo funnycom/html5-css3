@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>박스모델</title>
+	<style>
+		div {
+			width:200px;
+			height:100px;
+			display:inline-block;
+			margin:15px;
+			border:2px solid black;
+			background:#ffd800;			
+		}
+		.round1 { border-top-left-radius:100px 50px; } /* 왼쪽 위 라운딩 */
+		.round2 { border-bottom-right-radius:50% 30%; }
+		.round3 { border-top-right-radius:50px;}
+	</style>
+</head>
+<body>
+	<div class="round1"></div>
+	<div class="round2"></div>
+  <div class="round3"></div>
+</body>
+</html>
