@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title>표 만들기</title>
 	<style>
+		table, th, td {
+			border:1px solid #ccc;
+		}
 		td, th {
 			padding:10px;  /* 셀 테두리와 내용 사이의 간격(패딩) */
 		}
@@ -11,7 +14,7 @@
 </head>
 <body>	
 	<p id="summary">다음 표는 HTMl5를 지원하는 모던(Modern Browser)를 정리한 것입니다. 최신 버전일수록 HTML5를 좀더 많이 지원하기 때문에 최신 버전을 다운로드하는 것이 좋습니다. </p>
-	<table border="1" aria-describedby="summary">
+	<table aria-describedby="summary">
 		<caption>Modern Browser</caption>
 		<tr>
 			<th>브라우저</th>

@@ -6,10 +6,6 @@ body {
     height:100%;
     margin:0;
 }
-li,p {
-    line-height: 2.0;
-    font-size:0.9em;
-}
 #container {
     position:relative;
     left:50%;
@@ -28,6 +24,10 @@ aside {
     padding:20px 50px;
     height:100%;
     background:rgb(216, 216, 216);
+}
+li,p {
+    line-height: 2.0;
+    font-size:0.9em;
 }
 .pf {
     border-radius:10%;

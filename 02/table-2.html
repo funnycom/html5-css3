@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <title>표 만들기</title>
 	<style>
+		table, th, td {
+			border:1px solid #ccc;
+		}		
 		th {
 			padding:15px;   /* 셀 테두리와 내용 사이의 간격(패딩) */
+		}
+		tr > td:nth-child(odd) { 
+			width:120px;  /* 홀수번째 열의 너비 : 120px */
+		}
+		tr > td:nth-child(even) { 
+			width:300px;  /* 짝수번째 열의 너비 : 120px */
 		}
 	</style>
 </head>
 <body>
-	<table border="1">
-		<colgroup>
-			<col style="width:120px;">
-			<col style="width:300px;">
-			<col style="width:120px;">
-			<col style="width:300px;">
-		</colgroup>
+	<table>
 		<tr>
 			<th>이름</th>
 			<td></td>
