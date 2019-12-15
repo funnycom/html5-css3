@@ -9,6 +9,7 @@ header {
 	padding: 10px;
 	overflow: hidden;
 }
+
 header h1{
 	width:40%;
 	float:left;	
@@ -26,15 +27,14 @@ nav ul{
 
 nav ul li{
 	display: inline;
-	float: left;
 	margin: 15px;
 }
-
 
 nav ul li a{
 	color:white;
 	text-decoration:none;	
 }
+
 p {
 	font-size:15px;
 	line-height:20px;

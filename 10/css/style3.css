@@ -49,7 +49,6 @@ header h2{
 }
 .navi ul li {
 	display:inline;
-	float:left;
 	font-size:15px;
 }
 .navi a, .navi a:visited {
