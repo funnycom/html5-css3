@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 레이아웃</title>
+    <style>
+				body{
+					font-family:"맑은 고딕", "고딕", "굴림";
+				}
+				#wrapper{
+					width:800px;
+					margin: 0 auto;	
+				}
+				header {
+					width: 100%;
+					height: 150px;
+					background-color: #F46075;
+					background-image: url(images/nav2.png);
+					background-repeat: no-repeat;
+					background-position: right center;
+				}
+				header nav {
+					float: left;
+					width:70%;
+					margin-top: 50px;
+				}
+				nav ul{
+					list-style-type:none;	
+				}
+				nav ul li{
+					display: inline;
+					float: left;	
+					font-weight:bold;
+					margin: 15px;
+				}
+				nav ul li a{
+					color:white;
+					text-decoration:none;	
+				}
+				footer p {
+					padding:20px;
+				}
+				h1{font-size:2em;}
+				h2{font-size:1.5em;}
+				h3 {font-size:1.0em;}
+				p {
+					line-height:20px;
+					font-size:12px;
+				}
+				section {
+					float:left;
+					width:580px;
+					padding:5px;
+				}
+				section article{
+					float:left;
+					width:250px;
+					height:220px;	
+					margin:5px;
+					padding:10px;	
+					border:1px solid #ccc;
+				}
+				aside{
+					float:right;
+					width:200px;
+					height:auto;
+					margin-top:80px;
+					text-align:center;
+				}
+				footer{
+					clear:both;
+					width: 800px;
+					margin-bottom:0;
+					background-color:#333;
+					color:white;	
+					text-align:center;
+				}
+				.at1, .at2, .at3, .at4 {
+					transition:2s;
+					-webkit-transition:2s;
+					-moz-transition:2s;
+					-o-transition:2s;
+					-ms-transition:2s;
+				}
+				.at1:hover{
+					background-color:#cf9;
+					border:1px solid green;
+				}
+				.at2:hover{
+					background-color:#a2d0ff;
+					border:1px solid blue;
+				}
+				.at3:hover{
+					background-color:#ebcbfe;
+					border:1px solid purple;
+				}
+				.at4:hover{
+					background-color:#fc3;
+					border:1px solid red;
+				}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">애완견 종류</a></li>
+      <li><a href="#">입양하기</a></li>
+      <li><a href="#">건강돌보기</a></li>
+      <li><a href="#">더불어살기</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <h2>강아지 용품 준비하기</h2>
+  <article class="at1">  
+    <h3>강아지 집 </h3>
+     <p>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는 것이 좋습니다.</p>
+  </article>
+  <article class="at2"> 
+    <h3>강아지 먹이 </h3>
+    <p>강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 강아지에게는 성장속도에 맞는 사료를 급여하셔야 합니다. 사람이 먹는 음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+   </article>
+   <article class="at3"> 
+    <h3>밥그릇, 물병 </h3>
+    <p>밥그릇은 쉽게 넘어지지 않도록 바닥이 넓은 것이 좋습니다.물병은 대롱이 달린 것으로 선택하세요. 밥그릇에 물을 주게 되면 입 주변에 털이 모두 젖기 때문에 비위생적이므로 대롱을 통해서 물을 먹을 수 있는 물병을 마련하시는 것이 좋습니다.</p>
+   </article>
+   <article class="at4"> 
+    <h3>이름표, 목줄</h3> 
+    <p>강아지를 잃어버릴 염려가 있으니 산책할 무렵이 되면 이름표를 꼭 목에 걸어주도록 하세요. 그리고 방울이 달린 목걸이를 하고자 하실 때는 신중하셔야 합니다. 움직일 때마다 방울이 딸랑 거리면 신경이 예민한 강아지들에게는 좋지 않은 영향을 끼칠 수 있기 때문입니다.</p>
+   </article>
+ </section>
+<aside>
+		<img src="images/pet.png" alt="크림색 골든 리트리버 강아지">    
+</aside>
+<footer>
+  <p>Copyright 2012 funnycom</p>
+</footer>
+</div>
+</body>
+</html>
