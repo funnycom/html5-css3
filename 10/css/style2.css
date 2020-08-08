@@ -48,7 +48,7 @@ header h2{
 	padding-bottom:5px;
 }
 .navi ul li {
-	display:inline;
+	display:inline-block;
 	font-size:15px;
 }
 .navi a, .navi a:visited {
